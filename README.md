@@ -40,5 +40,12 @@ Python Flet 라이브러리를 활용하여 제작한 GUI 기반의 가위바위
 ✅ 문제 해결
 페이지의 축(Axis) 정렬 방식을 명시적으로 지정하여 UI 요소들을 화면 정중앙에 고정.
 
+'''
+# 수정 전: 기본 정렬 (창 크기에 따라 요소가 유동적임)
+
+# 수정 후: 축 정렬 고정
+page.horizontal_alignment = flet.CrossAxisAlignment.CENTER # 가로 중앙 고정
+page.vertical_alignment = flet.MainAxisAlignment.CENTER    # 세로 중앙 고정
+'''
 결과: 창 크기를 조절하거나 화면을 확대해도 모든 UI 요소가 흩어지지 않고 지정한 위치에 안정적으로 고정되어 사용자에게 일관된 인터페이스를 제공함.
 
